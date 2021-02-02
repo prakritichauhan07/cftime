@@ -115,6 +115,13 @@ instances.</p>
 <p>The default format of the string produced by strftime is controlled by self.format
 (default %Y-%m-%d %H:%M:%S).</p>
 <dl class="py method">
+<dt id="cftime.datetime.fromordinal">
+<em class="property">static </em><code class="sig-name descname">fromordinal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">jday</span></em>, <em class="sig-param"><span class="n">calendar</span><span class="o">=</span><span class="default_value">'standard'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.fromordinal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a datetime instance from a julian day ordinal and calendar
+(inverseeof toordinal).</p>
+</dd></dl>
+
+<dl class="py method">
 <dt id="cftime.datetime.isoformat">
 <code class="sig-name descname">isoformat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">sep</span><span class="o">=</span><span class="default_value">'T'</span></em>, <em class="sig-param"><span class="n">timespec</span><span class="o">=</span><span class="default_value">'auto'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#cftime.datetime.isoformat" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -149,7 +156,7 @@ day number within the current year starting with 1 for January 1st.</p>
 <dd><p>Return (integer) julian day ordinal.</p>
 <p>Day 0 starts at noon January 1 of the year -4713 for the
 julian, gregorian and standard calendars.</p>
-<p>Day 0 starts at noon on November 11 of the year -4714 for the
+<p>Day 0 starts at noon on November 24 of the year -4714 for the
 proleptic gregorian calendar.</p>
 <p>Day 0 starts at noon on January 1 of the year zero is for the
 360_day, 365_day, 366_day, all_leap and noleap calendars.</p>
